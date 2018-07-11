@@ -1,0 +1,206 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/*  */
+
+.error {
+  color: red;
+}
+
+
+button {cursor:pointer}
+
+
+
+
+/* Search Styles */
+
+.search {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.search__title {
+  font-size: 2.6rem;
+}
+
+.search__subtitle {
+  margin-top: 10px;
+  text-align: center;
+  line-height: 1.5rem;
+  color: blue;
+  font-size: 1.2rem;
+}
+
+
+/* Planets */
+.results {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-content: center;
+  flex-flow:  wrap;
+}
+ul {
+  list-style-type: none;
+}
+.results__item {
+  display: flex;
+  position: relative;
+  margin: 0 1% 15px;
+  box-shadow: 0 3px 20px ;
+  background: rgb(0, 255, 242);
+  overflow: auto;
+  text-overflow: ellipsis;
+  padding: 30px 20px;
+  text-align: center;
+vertical-align: middle;
+  align-content: center;
+  justify-content: center;
+  float: left;
+  overflow: hidden;
+  list-style: none;
+  flex-direction: column;
+}
+.results__bg {
+  position: absolute;
+  right: -90px;
+  bottom: 10px;
+  
+}
+.results__title {
+  display: inline-block;
+  margin: 0 0 10px;
+ 
+  padding-bottom: 3px;
+  line-height: 2rem;
+
+}
+
+.results__info {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 1.5rem;
+}
+
+
+/* Loader */
+.loader {
+  position: fixed;
+  left: 50%;
+  top: 90%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+
+
+
+
+/*LOADER */
+
+
+
+
+
+.indeterminate-loader {
+
+  background: url('./../src/images/5.gif');
+  /* z-index: 99;
+  position: fixed;
+  top: 50%;
+  left: 45%;
+  margin-top: -50px;
+  margin-left: -90px; */
+
+
+}
+
+
+
+svg.widget-svg {
+  width: 25px !important;
+
+}
+
+.oneThird {
+
+  width: 30%;
+  float: left;
+
+}
+
+.padding-buffer{
+  padding-left: 20px;
+  padding-top: 20px;
+}
